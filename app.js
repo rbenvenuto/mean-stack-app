@@ -4,22 +4,9 @@ var path = require('path');
 
 app.set('port', 3000);
 
-// Essas são as rotas da aplicação
+app.use(express.static(path.join(__dirname, 'public')));
 
-// Rota raíz
-
-/* 
- *   .sendFile vai juntar todos os argumentos
- *   e retornar o caminho completo
- */
-app.get('/', function(req, res) {
-    console.log('GET nessa porra');
-    res
-        .status(200)
-        .sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-/* Rota /json */
+// Rotas
 app.get('/json', function(req, res) {
     console.log('GET /json');
     res
