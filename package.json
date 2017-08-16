@@ -1,0 +1,26 @@
+{
+    "name": "mean-stack-app",
+    "version": "1.0.0",
+    "description": "Aplicação para estudar o MEAN Stack em JavaScript",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rbenvenuto/mean-stack-app.git"
+    },
+    "author": "Ranieri Benvenuto",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/rbenvenuto/mean-stack-app/issues"
+    },
+    "homepage": "https://github.com/rbenvenuto/mean-stack-app#readme",
+    "dependencies": {
+        "express": "^4.15.4"
+    },
+    "devDependencies": {
+        "mocha": "^3.5.0"
+    }
+}
